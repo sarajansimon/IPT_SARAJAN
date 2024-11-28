@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Homepage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Portfolio.css">
+    <style>
+        /* General Styles */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(1x2.jpg);
+    background-size:contain;
+    background-size: 110%;
+}
+
+.navbar {
+    background-color: #343a40; /* Dark background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #fff !important;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #00d9ff; /* Highlight on hover */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+/* Card Container */
+.card {
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.card-title {
+    color: #007bff; /* Bootstrap primary color */
+    font-size: 2rem;
+    margin: 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Skill Card */
+.skill-card {
+    background: #f1faee;
+    color: #1d3557;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #457b9d;
+}
+
+.skill-card .description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #4d4d4d;
+}
+
+/* Progress Bar */
+.progress {
+    background: #d3d3d3;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    background: #457b9d;
+    height: 100%;
+    text-align: center;
+    color: #f8f9fa;
+    line-height: 20px;
+    font-size: 0.9rem;
+    border-radius: 5px 0 0 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactMe.html">Contact Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Skills.html">Skills</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="skills-container">
+        <div class="skill-card">
+            <h2>HTML</h2>
+            <p class="description">Creating responsive and dynamic web pages.</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 90%;">90%</div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h2>CSS</h2>
+            <p class="description">Styling and designing websites with CSS3.</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 85%;">85%</div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h2>Graphic Design</h2>
+            <p class="description">Experienced in Adobe Photoshop and Illustrator.</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%;">75%</div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h2>Microsoft Word</h2>
+            <p class="description">Efficient in documentation and formatting.</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 95%;">95%</div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h2>MS Excel</h2>
+            <p class="description">Skilled in data analysis and creating reports.</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h2>MS PowerPoint</h2>
+            <p class="description">Creating impactful and engaging presentations.</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 90%;">90%</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="Skills.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
