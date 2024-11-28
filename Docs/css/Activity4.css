@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display:fixed;
+    font-size: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    color: white;
+}
+
+.navbar button {
+    padding: 30px;
+    background-color: white;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.search-button {
+    padding: 20px 20px;
+    background-color: gray;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    width: 70%;
+    margin: 20px;
+    border: 3px solid #000;
+}
+.h1 {
+  font-size: 36px;
+}
+.p {
+  font-size: 18px;
+}
+
+/* Ensure the image section is centered */
+.image-section {
+    text-align: center;
+    margin: 20px auto; /* Adjust margin as per your needs */
+    padding: 10px;
+    width: 50%; /* Set an appropriate width */
+    background-color: #fff; /* Optional, adjust background as needed */
+}
+
+.image-section img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional, for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional, adds a shadow effect */
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+}
